@@ -120,12 +120,16 @@ In the `main.js` module, invoke the `PotteryList` component function. Take its r
 > 🧨 Before you click the "Assessment Complete" button on the Learning Platform, add your answers below for each question and make a commit. It is your option to request a face-to-face meeting with a coach for a vocabulary review.
 
 1. Explain how you got the HTML, with the correct data, displayed in the browser?
-   > Your answer here
+   > In the potteryList module I first imported an array of non cracked pottery objects, then I defined a function that would iterate through that array, and create an HTML string based on the properties of each object in the array. That function is exported to the main module where it is invoked and assigned to a variable. Then I used the getDocumentById and innerHTML methods to target the DOM.
+
 2. In the **PotteryList** module, when you iterate your pottery, you need to show the evidence of what the **weight** property's value is for the 2nd piece of pottery. Use [Loom](https://www.loom.com/) to record your browser window with the developer tools open and show those values.
-   > Paste your video's public URL here
+   > https://www.loom.com/share/6bc90a6b4c3a4afba7f907de9a25f1fd?sid=b05110ac-2637-4fe7-bc97-27b79f07411a
+
 3. The **PotteryWheel** module has a single function named `makePottery`. Why doesn't that module have all of the other code in it?
-   > Your answer here
+   > Organizing the code into separate modules makes it easier to follow the purpose of each function. So the potteryWheel module only contains the function, makePottery, which is responsible for assigning the various properties to each pottery object. It wouldn't make sense to include the other functions here because they deal with the pottery after it has been made. 
+
 4. The pottery shop has learned that there is a set of customers that are willing to buy cracked pottery at a discounted price of $2.50. That means that the cracked pottery should now be displayed in the catalog. Explain the changes that this new business strategy would cause to your algorithm.
-   > Your answer here
+   > This would result in needing to change the toSellOrNotToSell function in the potteryCatalog module. Instead of only assigning a price property to pottery objects that are not cracked, the function would need to add a condition that looked for cracked pottery, and assigned it a price property of 2.50.
+
 5. In the **Kiln** module, you have a `firePottery()` function. You need to demonstrate how to use the debugger to verify the values of the parameters for that function when your code runs. Use [Loom](https://www.loom.com/) to record your browser window with the developer tools open and show those values.
-   > Paste your video's public URL here
+   > https://www.loom.com/share/dd83d1793ab54726a253dca714910f89?sid=5099ca67-996e-4bf0-8544-db8a55449924
